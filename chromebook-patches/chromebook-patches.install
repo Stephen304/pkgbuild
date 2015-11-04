@@ -1,0 +1,13 @@
+post_install() {
+    echo "Updating hwdb..."
+    udevadm hwdb --update
+    echo done
+}
+
+post_upgrade() {
+    post_install
+}
+
+post_remove() {
+    post_install
+}

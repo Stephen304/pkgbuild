@@ -1,0 +1,16 @@
+# Maintainer: Stephen Smith <stephen304@gmail.com>
+pkgname=chromebook-patches
+pkgver=1
+pkgrel=1
+pkgdesc='Config files and udev rules for chromebook hardware.'
+arch=('any')
+url='http://aur.archlinux.org/'
+license=('MIT')
+source=('90-chromebook-keyboard-fix.hwdb' '50-cros-touchpad.conf')
+md5sums=('378d4a92fc1404167cda75d0a9fa2457' '521e893c77872a57d641efaa5e9ae4c4')
+install=$pkgname.install
+
+package() {
+    install -Dm644 90-chromebook-keyboard-fix.hwdb ${pkgdir}/etc/udev/hwdb.d/90-chromebook-keyboard-fix.hwdb
+    install -Dm644 50-cros-touchpad.conf ${pkgdir}/etc/X11/xorg.conf.d/50-cros-touchpad.conf
+}

@@ -1,0 +1,13 @@
+# Chromebook 14 fix
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svnHewlett-Packard*:pnFalco:pvr*
+ KEYBOARD_KEY_3b=f1
+ KEYBOARD_KEY_3c=f2
+ KEYBOARD_KEY_3d=f3
+ KEYBOARD_KEY_3e=f4
+ KEYBOARD_KEY_3f=f5
+ KEYBOARD_KEY_40=f6
+ KEYBOARD_KEY_41=f7
+ KEYBOARD_KEY_42=f8
+ KEYBOARD_KEY_43=f9
+ KEYBOARD_KEY_44=f10
+ KEYBOARD_KEY_db=leftmeta

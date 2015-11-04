@@ -1,0 +1,15 @@
+pkgbase = chromebook-patches
+	pkgdesc = Config files and udev rules for chromebook hardware.
+	pkgver = 1
+	pkgrel = 1
+	url = http://aur.archlinux.org/
+	install = chromebook-patches.install
+	arch = any
+	license = MIT
+	source = 90-chromebook-keyboard-fix.hwdb
+	source = 50-cros-touchpad.conf
+	md5sums = 378d4a92fc1404167cda75d0a9fa2457
+	md5sums = 521e893c77872a57d641efaa5e9ae4c4
+
+pkgname = chromebook-patches
+
